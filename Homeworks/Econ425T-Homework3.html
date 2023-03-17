@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Richard Grigorian (UID: 505-088-797)">
+<meta name="dcterms.date" content="2023-02-14">
+
+<title>Econ 425T Homework 3</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="Econ425T-Homework3_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Econ425T-Homework3_files/libs/quarto-html/quarto.js"></script>
+<script src="Econ425T-Homework3_files/libs/quarto-html/popper.min.js"></script>
+<script src="Econ425T-Homework3_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Econ425T-Homework3_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Econ425T-Homework3_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Econ425T-Homework3_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Econ425T-Homework3_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Econ425T-Homework3_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Econ425T-Homework3_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#isl-exercise-4.8.1-10pts" id="toc-isl-exercise-4.8.1-10pts" class="nav-link active" data-scroll-target="#isl-exercise-4.8.1-10pts"><span class="toc-section-number">1</span>  ISL Exercise 4.8.1 (10pts)</a></li>
+  <li><a href="#isl-exercise-4.8.6-10pts" id="toc-isl-exercise-4.8.6-10pts" class="nav-link" data-scroll-target="#isl-exercise-4.8.6-10pts"><span class="toc-section-number">2</span>  ISL Exercise 4.8.6 (10pts)</a>
+  <ul class="collapse">
+  <li><a href="#part-a" id="toc-part-a" class="nav-link" data-scroll-target="#part-a"><span class="toc-section-number">2.1</span>  Part (a)</a></li>
+  <li><a href="#part-b" id="toc-part-b" class="nav-link" data-scroll-target="#part-b"><span class="toc-section-number">2.2</span>  Part (b)</a></li>
+  </ul></li>
+  <li><a href="#isl-exercise-4.8.9-10pts" id="toc-isl-exercise-4.8.9-10pts" class="nav-link" data-scroll-target="#isl-exercise-4.8.9-10pts"><span class="toc-section-number">3</span>  ISL Exercise 4.8.9 (10pts)</a>
+  <ul class="collapse">
+  <li><a href="#part-a-1" id="toc-part-a-1" class="nav-link" data-scroll-target="#part-a-1"><span class="toc-section-number">3.1</span>  Part (a)</a></li>
+  <li><a href="#part-b-1" id="toc-part-b-1" class="nav-link" data-scroll-target="#part-b-1"><span class="toc-section-number">3.2</span>  Part (b)</a></li>
+  </ul></li>
+  <li><a href="#isl-exercise-4.8.13-a-i-50pts" id="toc-isl-exercise-4.8.13-a-i-50pts" class="nav-link" data-scroll-target="#isl-exercise-4.8.13-a-i-50pts"><span class="toc-section-number">4</span>  ISL Exercise 4.8.13 (a)-(i) (50pts)</a>
+  <ul class="collapse">
+  <li><a href="#part-a-2" id="toc-part-a-2" class="nav-link" data-scroll-target="#part-a-2"><span class="toc-section-number">4.1</span>  Part (a)</a></li>
+  <li><a href="#part-b-2" id="toc-part-b-2" class="nav-link" data-scroll-target="#part-b-2"><span class="toc-section-number">4.2</span>  Part (b)</a></li>
+  <li><a href="#part-c" id="toc-part-c" class="nav-link" data-scroll-target="#part-c"><span class="toc-section-number">4.3</span>  Part (c)</a></li>
+  <li><a href="#part-d" id="toc-part-d" class="nav-link" data-scroll-target="#part-d"><span class="toc-section-number">4.4</span>  Part (d)</a></li>
+  <li><a href="#part-e" id="toc-part-e" class="nav-link" data-scroll-target="#part-e"><span class="toc-section-number">4.5</span>  Part (e)</a></li>
+  <li><a href="#part-f" id="toc-part-f" class="nav-link" data-scroll-target="#part-f"><span class="toc-section-number">4.6</span>  Part (f)</a></li>
+  <li><a href="#part-g" id="toc-part-g" class="nav-link" data-scroll-target="#part-g"><span class="toc-section-number">4.7</span>  Part (g)</a></li>
+  <li><a href="#part-h" id="toc-part-h" class="nav-link" data-scroll-target="#part-h"><span class="toc-section-number">4.8</span>  Part (h)</a></li>
+  <li><a href="#part-i" id="toc-part-i" class="nav-link" data-scroll-target="#part-i"><span class="toc-section-number">4.9</span>  Part (i)</a></li>
+  </ul></li>
+  <li><a href="#bonus-question-isl-exercise-4.8.13-part-j-30pts" id="toc-bonus-question-isl-exercise-4.8.13-part-j-30pts" class="nav-link" data-scroll-target="#bonus-question-isl-exercise-4.8.13-part-j-30pts"><span class="toc-section-number">5</span>  Bonus question: ISL Exercise 4.8.13 Part (j) (30pts)</a></li>
+  <li><a href="#bonus-question-isl-exercise-4.8.4-30pts" id="toc-bonus-question-isl-exercise-4.8.4-30pts" class="nav-link" data-scroll-target="#bonus-question-isl-exercise-4.8.4-30pts"><span class="toc-section-number">6</span>  Bonus question: ISL Exercise 4.8.4 (30pts)</a>
+  <ul class="collapse">
+  <li><a href="#part-a-3" id="toc-part-a-3" class="nav-link" data-scroll-target="#part-a-3"><span class="toc-section-number">6.1</span>  Part (a)</a></li>
+  <li><a href="#part-b-3" id="toc-part-b-3" class="nav-link" data-scroll-target="#part-b-3"><span class="toc-section-number">6.2</span>  Part (b)</a></li>
+  <li><a href="#part-c-1" id="toc-part-c-1" class="nav-link" data-scroll-target="#part-c-1"><span class="toc-section-number">6.3</span>  Part (c)</a></li>
+  <li><a href="#part-d-1" id="toc-part-d-1" class="nav-link" data-scroll-target="#part-d-1"><span class="toc-section-number">6.4</span>  Part (d)</a></li>
+  <li><a href="#part-e-1" id="toc-part-e-1" class="nav-link" data-scroll-target="#part-e-1"><span class="toc-section-number">6.5</span>  Part (e)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Econ 425T Homework 3</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Richard Grigorian (UID: 505-088-797) </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 14, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<div style="page-break-after: always;"></div>
+<section id="isl-exercise-4.8.1-10pts" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="isl-exercise-4.8.1-10pts"><span class="header-section-number">1</span> ISL Exercise 4.8.1 (10pts)</h2>
+<p>Using a little bit of algebra, prove that (4.2) is equivalent to (4.3). In other words, the logistic function representation and logit represen- tation for the logistic regression model are equivalent.</p>
+<section id="solution" class="level4">
+<h4 class="anchored" data-anchor-id="solution">Solution</h4>
+<p>We prove the equivalance of 4.2 and 4.3 with the following. Consider the given expression for the logistic function: <span class="math display">\begin{align*}
+p(X) &amp;= \frac{e^{\beta_0 + \beta_1 X}}{1 + e^{\beta_0 + \beta_1 X}} \\
+(1 + e^{\beta_0 + \beta_1 X}) p(X) &amp;= e^{\beta_0 + \beta_1 X}
+\end{align*}</span> We now find <span class="math inline">1-p(X)</span> <span class="math display">\begin{align*}
+1 - p(X) &amp;= 1 - \frac{e^{\beta_0 + \beta_1 X}}{1 + e^{\beta_0 + \beta_1 X}} \\
+&amp;= \frac{1 + e^{\beta_0 + \beta_1 X}}{1 + e^{\beta_0 + \beta_1 X}} - \frac{e^{\beta_0 + \beta_1 X}}{1 + e^{\beta_0 + \beta_1 X}} \\
+&amp;= \frac{1}{1 + e^{\beta_0 + \beta_1 X}}
+\end{align*}</span> We can invert this to see that <span class="math display">
+\frac{1}{1-p(X)} = 1 + e^{\beta_0 + \beta_1 X}
+</span> Therefore we see that <span class="math display">\begin{align*}
+p(X) &amp;= \frac{e^{\beta_0 + \beta_1 X}}{1 + e^{\beta_0 + \beta_1 X}} \\
+(1 + e^{\beta_0 + \beta_1 X}) p(X) &amp;= e^{\beta_0 + \beta_1 X}\\
+\frac{p(X)}{1-p(X)} &amp; = e^{\beta_0 + \beta_1 X}
+\end{align*}</span> Hence we have shown that the logistic function respresentation and logit representation for the logsitic regression model are equivalent.</p>
+</section>
+</section>
+<section id="isl-exercise-4.8.6-10pts" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="isl-exercise-4.8.6-10pts"><span class="header-section-number">2</span> ISL Exercise 4.8.6 (10pts)</h2>
+<p>Suppose we collect data for a group of students in a statistics class with variables <span class="math inline">X_1 = \text{hours studied}</span>, <span class="math inline">X_2 = \text{undergrad GPA}</span>, and <span class="math inline">Y = \text{receive an A}</span>. We fit a logistic regression and produce estimated coefficients, <span class="math inline">\hat{\beta}_0 = -6</span>, <span class="math inline">\hat{\beta}_1 = 0.05</span>, and <span class="math inline">\hat{\beta}_2 = 1</span></p>
+<section id="part-a" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="part-a"><span class="header-section-number">2.1</span> Part (a)</h3>
+<p>Estimate the probability that a student who studies for 40 hours and has an undergrad GPA of 3.5 gets an A in the class.</p>
+<section id="solution-1" class="level4">
+<h4 class="anchored" data-anchor-id="solution-1">Solution</h4>
+<p>With the above information we find the probability <span class="math inline">\hat{p}(X)</span>: <span class="math display">\begin{align*}
+\hat{p}(X) &amp;= \frac{e^{\beta_0 + \beta_1 x_1 + \beta_2 x_2}}{1 + e^{\beta_0 + \beta_1 x_1 + \beta_2 x_2}} \\
+&amp;= \frac{e^{-6 + 0.05(40) + 3.5}}{1 + e^{-6 + 0.05(40) + 3.5}} \\
+&amp;= \frac{e^{-0.5}}{1 + e^{-0.5}} \\
+&amp;= 0.3775
+\end{align*}</span></p>
+</section>
+</section>
+<section id="part-b" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="part-b"><span class="header-section-number">2.2</span> Part (b)</h3>
+<p>How many hours would the student in part (a) need to study to have a 50% chance of getting an A in the class?</p>
+<section id="solution-2" class="level4">
+<h4 class="anchored" data-anchor-id="solution-2">Solution</h4>
+<p><span class="math display">\begin{align*}
+\hat{p}(X) &amp;= \frac{e^{\beta_0 + \beta_1 x_1 + \beta_2 x_2}}{1 + e^{\beta_0 + \beta_1 x_1 + \beta_2 x_2}} \\
+0.5 &amp;= \frac{e^{-6 + 0.05x_1 + 3.5}}{1 + e^{-6 + 0.05 x_1 + 3.5}}
+\end{align*}</span> Instead we can use the alternative formulation from equation (4.6): <span class="math display">\begin{align*}
+\ln \left( \frac{p(X)}{1 - p(X)} \right ) &amp;= \beta_0 + \beta_1 x_1 + \beta_2 x_2 \\
+\ln \left( \frac{0.5}{1 - 0.5} \right ) &amp;= -6 + 0.05 x_2 + 3.5 \\
+0 &amp;= -2.5 + 0.05x_2 \\
+&amp;\implies x_2 = 50
+\end{align*}</span></p>
+</section>
+</section>
+</section>
+<section id="isl-exercise-4.8.9-10pts" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="isl-exercise-4.8.9-10pts"><span class="header-section-number">3</span> ISL Exercise 4.8.9 (10pts)</h2>
+<p>This problem has to do with <em>odds</em>.</p>
+<section id="part-a-1" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="part-a-1"><span class="header-section-number">3.1</span> Part (a)</h3>
+<p>On average, what fraction of people with odds of 0.37 of defualting on their credit card payment will in fact default?</p>
+<section id="solution-3" class="level4">
+<h4 class="anchored" data-anchor-id="solution-3">Solution</h4>
+<p>We define odds as <span class="math inline">\frac{p(X)}{1 - p(X)}</span>. Hence, if odds is equal to 0.37 then <span class="math display">\begin{align*}
+\frac{p(X)}{1 - p(X)} &amp;= 0.37 \\
+p(X) &amp;= 0.37 - 0.37p(X) \\
+1.37p(X) &amp;= 0.37 \\
+&amp;\implies p(X) = \frac{0.37}{1.37} = 0.2701
+\end{align*}</span></p>
+</section>
+</section>
+<section id="part-b-1" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="part-b-1"><span class="header-section-number">3.2</span> Part (b)</h3>
+<p>Suppose that an individual has a 16% chance of defaulting on her credit card payment. What are the odds that she will default?</p>
+<section id="solution-4" class="level4">
+<h4 class="anchored" data-anchor-id="solution-4">Solution</h4>
+<p>If probability is equal to 0.16 then odds will be <span class="math display">\frac{0.16}{1-0.16} = \frac{0.16}{0.84} = 0.1905</span></p>
+</section>
+</section>
+</section>
+<section id="isl-exercise-4.8.13-a-i-50pts" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="isl-exercise-4.8.13-a-i-50pts"><span class="header-section-number">4</span> ISL Exercise 4.8.13 (a)-(i) (50pts)</h2>
+<p>This question should be answered using the <code>Weekly</code> dataset, which is part of the <code>ISLR2</code> package. This dat is similar in nature to the <code>Smarket</code> data from this chapter’s lab, except it contains 1,089 weekly returns for 21 years, from the beginning of 1990 to the end of 2010.</p>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Standard Imports</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> io</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Statsmodels Imports</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.formula.api <span class="im">as</span> smf</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Sklearn Imports</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> OneHotEncoder</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.compose <span class="im">import</span> make_column_transformer</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.pipeline <span class="im">import</span> Pipeline</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> confusion_matrix</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.discriminant_analysis <span class="im">import</span> LinearDiscriminantAnalysis</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.discriminant_analysis <span class="im">import</span> QuadraticDiscriminantAnalysis</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.neighbors <span class="im">import</span> KNeighborsClassifier</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> GaussianNB</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> roc_auc_score</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="part-a-2" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="part-a-2"><span class="header-section-number">4.1</span> Part (a)</h3>
+<p>Produce some numerical and graphical summaries of the <code>Weekly</code> data. Do there appear to be any patterns?</p>
+<section id="solution-5" class="level4">
+<h4 class="anchored" data-anchor-id="solution-5">Solution</h4>
+<p>Firstly, I will load the data from Dr.&nbsp;Zhou’s Github Repository using the following code:</p>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loading Data</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">"https://raw.githubusercontent.com/ucla-econ-425t/2023winter/master/slides/data/Weekly.csv"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> requests.get(url).content</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>Weekly <span class="op">=</span> pd.read_csv(io.StringIO(s.decode(<span class="st">'utf-8'</span>)))</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>Weekly.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Year</th>
+      <th>Lag1</th>
+      <th>Lag2</th>
+      <th>Lag3</th>
+      <th>Lag4</th>
+      <th>Lag5</th>
+      <th>Volume</th>
+      <th>Today</th>
+      <th>Direction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1990</td>
+      <td>0.816</td>
+      <td>1.572</td>
+      <td>-3.936</td>
+      <td>-0.229</td>
+      <td>-3.484</td>
+      <td>0.154976</td>
+      <td>-0.270</td>
+      <td>Down</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1990</td>
+      <td>-0.270</td>
+      <td>0.816</td>
+      <td>1.572</td>
+      <td>-3.936</td>
+      <td>-0.229</td>
+      <td>0.148574</td>
+      <td>-2.576</td>
+      <td>Down</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1990</td>
+      <td>-2.576</td>
+      <td>-0.270</td>
+      <td>0.816</td>
+      <td>1.572</td>
+      <td>-3.936</td>
+      <td>0.159837</td>
+      <td>3.514</td>
+      <td>Up</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1990</td>
+      <td>3.514</td>
+      <td>-2.576</td>
+      <td>-0.270</td>
+      <td>0.816</td>
+      <td>1.572</td>
+      <td>0.161630</td>
+      <td>0.712</td>
+      <td>Up</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1990</td>
+      <td>0.712</td>
+      <td>3.514</td>
+      <td>-2.576</td>
+      <td>-0.270</td>
+      <td>0.816</td>
+      <td>0.153728</td>
+      <td>1.178</td>
+      <td>Up</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Notice that the <code>Direction</code> variable is categorical. We will convert this to a binary so that our plots make more sense.</p>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert y to binary</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Weekly <span class="op">=</span> pd.get_dummies(Weekly).drop(<span class="st">'Direction_Down'</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Weekly.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Year</th>
+      <th>Lag1</th>
+      <th>Lag2</th>
+      <th>Lag3</th>
+      <th>Lag4</th>
+      <th>Lag5</th>
+      <th>Volume</th>
+      <th>Today</th>
+      <th>Direction_Up</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1990</td>
+      <td>0.816</td>
+      <td>1.572</td>
+      <td>-3.936</td>
+      <td>-0.229</td>
+      <td>-3.484</td>
+      <td>0.154976</td>
+      <td>-0.270</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1990</td>
+      <td>-0.270</td>
+      <td>0.816</td>
+      <td>1.572</td>
+      <td>-3.936</td>
+      <td>-0.229</td>
+      <td>0.148574</td>
+      <td>-2.576</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1990</td>
+      <td>-2.576</td>
+      <td>-0.270</td>
+      <td>0.816</td>
+      <td>1.572</td>
+      <td>-3.936</td>
+      <td>0.159837</td>
+      <td>3.514</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1990</td>
+      <td>3.514</td>
+      <td>-2.576</td>
+      <td>-0.270</td>
+      <td>0.816</td>
+      <td>1.572</td>
+      <td>0.161630</td>
+      <td>0.712</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1990</td>
+      <td>0.712</td>
+      <td>3.514</td>
+      <td>-2.576</td>
+      <td>-0.270</td>
+      <td>0.816</td>
+      <td>0.153728</td>
+      <td>1.178</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Notice now our response variable takes the value 1 if the stock market went up and 0 if it went down. We will produce some numerical and graphical summaries of the data.</p>
+<div class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Descriptive Statistics</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Weekly.describe().T</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Year</th>
+      <td>1089.0</td>
+      <td>2000.048669</td>
+      <td>6.033182</td>
+      <td>1990.000000</td>
+      <td>1995.000000</td>
+      <td>2000.00000</td>
+      <td>2005.000000</td>
+      <td>2010.000000</td>
+    </tr>
+    <tr>
+      <th>Lag1</th>
+      <td>1089.0</td>
+      <td>0.150585</td>
+      <td>2.357013</td>
+      <td>-18.195000</td>
+      <td>-1.154000</td>
+      <td>0.24100</td>
+      <td>1.405000</td>
+      <td>12.026000</td>
+    </tr>
+    <tr>
+      <th>Lag2</th>
+      <td>1089.0</td>
+      <td>0.151079</td>
+      <td>2.357254</td>
+      <td>-18.195000</td>
+      <td>-1.154000</td>
+      <td>0.24100</td>
+      <td>1.409000</td>
+      <td>12.026000</td>
+    </tr>
+    <tr>
+      <th>Lag3</th>
+      <td>1089.0</td>
+      <td>0.147205</td>
+      <td>2.360502</td>
+      <td>-18.195000</td>
+      <td>-1.158000</td>
+      <td>0.24100</td>
+      <td>1.409000</td>
+      <td>12.026000</td>
+    </tr>
+    <tr>
+      <th>Lag4</th>
+      <td>1089.0</td>
+      <td>0.145818</td>
+      <td>2.360279</td>
+      <td>-18.195000</td>
+      <td>-1.158000</td>
+      <td>0.23800</td>
+      <td>1.409000</td>
+      <td>12.026000</td>
+    </tr>
+    <tr>
+      <th>Lag5</th>
+      <td>1089.0</td>
+      <td>0.139893</td>
+      <td>2.361285</td>
+      <td>-18.195000</td>
+      <td>-1.166000</td>
+      <td>0.23400</td>
+      <td>1.405000</td>
+      <td>12.026000</td>
+    </tr>
+    <tr>
+      <th>Volume</th>
+      <td>1089.0</td>
+      <td>1.574618</td>
+      <td>1.686636</td>
+      <td>0.087465</td>
+      <td>0.332022</td>
+      <td>1.00268</td>
+      <td>2.053727</td>
+      <td>9.328214</td>
+    </tr>
+    <tr>
+      <th>Today</th>
+      <td>1089.0</td>
+      <td>0.149899</td>
+      <td>2.356927</td>
+      <td>-18.195000</td>
+      <td>-1.154000</td>
+      <td>0.24100</td>
+      <td>1.405000</td>
+      <td>12.026000</td>
+    </tr>
+    <tr>
+      <th>Direction_Up</th>
+      <td>1089.0</td>
+      <td>0.555556</td>
+      <td>0.497132</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.00000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Weekly</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="16">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Year</th>
+      <th>Lag1</th>
+      <th>Lag2</th>
+      <th>Lag3</th>
+      <th>Lag4</th>
+      <th>Lag5</th>
+      <th>Volume</th>
+      <th>Today</th>
+      <th>Direction_Up</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1990</td>
+      <td>0.816</td>
+      <td>1.572</td>
+      <td>-3.936</td>
+      <td>-0.229</td>
+      <td>-3.484</td>
+      <td>0.154976</td>
+      <td>-0.270</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1990</td>
+      <td>-0.270</td>
+      <td>0.816</td>
+      <td>1.572</td>
+      <td>-3.936</td>
+      <td>-0.229</td>
+      <td>0.148574</td>
+      <td>-2.576</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1990</td>
+      <td>-2.576</td>
+      <td>-0.270</td>
+      <td>0.816</td>
+      <td>1.572</td>
+      <td>-3.936</td>
+      <td>0.159837</td>
+      <td>3.514</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1990</td>
+      <td>3.514</td>
+      <td>-2.576</td>
+      <td>-0.270</td>
+      <td>0.816</td>
+      <td>1.572</td>
+      <td>0.161630</td>
+      <td>0.712</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1990</td>
+      <td>0.712</td>
+      <td>3.514</td>
+      <td>-2.576</td>
+      <td>-0.270</td>
+      <td>0.816</td>
+      <td>0.153728</td>
+      <td>1.178</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1084</th>
+      <td>2010</td>
+      <td>-0.861</td>
+      <td>0.043</td>
+      <td>-2.173</td>
+      <td>3.599</td>
+      <td>0.015</td>
+      <td>3.205160</td>
+      <td>2.969</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1085</th>
+      <td>2010</td>
+      <td>2.969</td>
+      <td>-0.861</td>
+      <td>0.043</td>
+      <td>-2.173</td>
+      <td>3.599</td>
+      <td>4.242568</td>
+      <td>1.281</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1086</th>
+      <td>2010</td>
+      <td>1.281</td>
+      <td>2.969</td>
+      <td>-0.861</td>
+      <td>0.043</td>
+      <td>-2.173</td>
+      <td>4.835082</td>
+      <td>0.283</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1087</th>
+      <td>2010</td>
+      <td>0.283</td>
+      <td>1.281</td>
+      <td>2.969</td>
+      <td>-0.861</td>
+      <td>0.043</td>
+      <td>4.454044</td>
+      <td>1.034</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1088</th>
+      <td>2010</td>
+      <td>1.034</td>
+      <td>0.283</td>
+      <td>1.281</td>
+      <td>2.969</td>
+      <td>-0.861</td>
+      <td>2.707105</td>
+      <td>0.069</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>1089 rows × 9 columns</p>
+</div>
+</div>
+</div>
+<p>From the above summary, we see that all of our variables have 1089 observations. Additionally, we see the mean, standard deviation, and 5 number summary of our variables. In terms of our response, a mean of 0.55 implies that the stock market “goes up” more often then it “goes down” but it says nothing of magnitude.</p>
+<div class="cell" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Giant Pairplot</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">8</span>))</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.pairplot(Weekly, hue<span class="op">=</span><span class="st">"Direction_Up"</span>, corner<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>g.fig.suptitle(<span class="st">"Pairwise Scatterplots"</span>, fontsize<span class="op">=</span><span class="dv">28</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="39">
+<pre><code>Text(0.5, 0.98, 'Pairwise Scatterplots')</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;Figure size 576x576 with 0 Axes&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Econ425T-Homework3_files/figure-html/cell-7-output-3.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="46">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Correlations</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>correlations <span class="op">=</span> Weekly.corr()</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">10</span>))</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>sns.heatmap(correlations,</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>            vmax<span class="op">=</span><span class="dv">1</span>, annot<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>g.suptitle(<span class="st">"Correlation Heatmap"</span>, fontsize<span class="op">=</span><span class="dv">18</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="46">
+<pre><code>Text(0.5, 0.98, 'Correlation Heatmap')</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Econ425T-Homework3_files/figure-html/cell-8-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>From pairplot, we notice a couple things. Namely, we see that <strong>volume appears to exponentially increase with the year</strong>. Additionally, we look closer at the density plots for <code>today</code> and notice (with the hue) that if the returns for this week are positive then the market moved upward. Whilst obvious, it is a feature of the data that we observe to hold true. Additionally, we notice a large right skew for <code>Volume</code>.</p>
+<p>From the correlation heatmap, we see that <code>Today</code> and <code>Direction_Up</code> are positively correlated (to be expected). Additionally, we see that <code>Volume</code> and <code>Year</code> are highly positively correlated. We noticed a similar trend in the pairplot and we get confirmation of this correlation hear.</p>
+</section>
+</section>
+<section id="part-b-2" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="part-b-2"><span class="header-section-number">4.2</span> Part (b)</h3>
+<p>Use the full data set to perform a logistic regression with <code>Direction</code> as the response and the five lag variables plus <code>Volume</code> as predictors. Use the summary function to print the results. Do any of the predictors appear to be statistically significant? If so, which ones?</p>
+<section id="solution-6" class="level4">
+<h4 class="anchored" data-anchor-id="solution-6">Solution</h4>
+<p>In this section, we will use <code>stats-models</code> to perofmr the logistic regression only because the problem asks us to print a summary. This is not a feaature that is available with <code>sklearn</code>.</p>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Logistic regression</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>logit_mod_13b <span class="op">=</span> smf.logit(</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    formula <span class="op">=</span> <span class="st">'Direction_Up ~ Lag1 + Lag2 + Lag3 + Lag4 + Lag5 + Volume'</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> Weekly</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>).fit()</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(logit_mod_13b.summary())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Optimization terminated successfully.
+         Current function value: 0.682441
+         Iterations 4
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:           Direction_Up   No. Observations:                 1089
+Model:                          Logit   Df Residuals:                     1082
+Method:                           MLE   Df Model:                            6
+Date:                Tue, 14 Feb 2023   Pseudo R-squ.:                0.006580
+Time:                        09:42:11   Log-Likelihood:                -743.18
+converged:                       True   LL-Null:                       -748.10
+Covariance Type:            nonrobust   LLR p-value:                    0.1313
+==============================================================================
+                 coef    std err          z      P&gt;|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.2669      0.086      3.106      0.002       0.098       0.435
+Lag1          -0.0413      0.026     -1.563      0.118      -0.093       0.010
+Lag2           0.0584      0.027      2.175      0.030       0.006       0.111
+Lag3          -0.0161      0.027     -0.602      0.547      -0.068       0.036
+Lag4          -0.0278      0.026     -1.050      0.294      -0.080       0.024
+Lag5          -0.0145      0.026     -0.549      0.583      -0.066       0.037
+Volume        -0.0227      0.037     -0.616      0.538      -0.095       0.050
+==============================================================================</code></pre>
+</div>
+</div>
+<p>From the above summary table, it is clear that the only variable statistically significant at the 5% level is <code>Lag2</code> since its p-value is less than 0.05.</p>
+</section>
+</section>
+<section id="part-c" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="part-c"><span class="header-section-number">4.3</span> Part (c)</h3>
+<p>Compute the confusion matrix and overall fraction of correct predictions. Explain what the confusion matrix is telling you about the types of mistakes made by logistic regression.</p>
+<section id="solution-7" class="level4">
+<h4 class="anchored" data-anchor-id="solution-7">Solution</h4>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to output cleaner confusion matrix</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> confusion_matrix_nice(confusion_mtx):</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    confusion_df <span class="op">=</span> pd.DataFrame({<span class="st">'y_pred=0'</span>: np.append(confusion_mtx[:, <span class="dv">0</span>],</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>                                                        confusion_mtx.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">0</span>)[<span class="dv">0</span>]),</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">'y_pred=1'</span>: np.append(confusion_mtx[:, <span class="dv">1</span>],</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>                                                        confusion_mtx.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">0</span>)[<span class="dv">1</span>]),</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">'Total'</span>: np.append(confusion_mtx.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>), <span class="st">''</span>),</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">''</span>: [<span class="st">'y=0'</span>, <span class="st">'y=1'</span>, <span class="st">'Total'</span>]}).set_index(<span class="st">''</span>)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> confusion_df</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Getting simple confusion matrix from statsmodels</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>confusion_matrix_13c <span class="op">=</span> logit_mod_13b.pred_table(threshold<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Getting cleaner confusion matrix</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>confusion_matrix_nice(confusion_matrix_13c)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>y_pred=0</th>
+      <th>y_pred=1</th>
+      <th>Total</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>y=0</th>
+      <td>54.0</td>
+      <td>430.0</td>
+      <td>484.0</td>
+    </tr>
+    <tr>
+      <th>y=1</th>
+      <td>48.0</td>
+      <td>557.0</td>
+      <td>605.0</td>
+    </tr>
+    <tr>
+      <th>Total</th>
+      <td>102.0</td>
+      <td>987.0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<p>The “overall fraction of correct predictions” is simply the accuracy rate of our model. Hence, we compute the accuracy below.</p>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Accuracy</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>acc <span class="op">=</span> (confusion_matrix_13c[<span class="dv">1</span>,<span class="dv">1</span>] <span class="op">+</span> confusion_matrix_13c[<span class="dv">0</span>,<span class="dv">0</span>])<span class="op">/</span>np.<span class="bu">sum</span>(confusion_matrix_13c)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Accuracy: "</span>, acc)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># False positive rate</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>fpr <span class="op">=</span> confusion_matrix_13c[<span class="dv">0</span>,<span class="dv">1</span>] <span class="op">/</span> np.<span class="bu">sum</span>(confusion_matrix_13c[<span class="dv">0</span>,:])</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"False Positive Rate:"</span>, fpr)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="co"># False negative rate</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>fnr <span class="op">=</span> confusion_matrix_13c[<span class="dv">1</span>, <span class="dv">0</span>] <span class="op">/</span> np.<span class="bu">sum</span>(confusion_matrix_13c[<span class="dv">1</span>, :])</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"False Negative Rate: "</span>, fnr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy:  0.5610651974288338
+False Positive Rate: 0.8884297520661157
+False Negative Rate:  0.07933884297520662</code></pre>
+</div>
+</div>
+<p>We find that <strong>the total accuracy of the model is about 56%</strong>. Recall from the summary table that about 55% of all results were 1 which meant that 55% of the time the stock market went up. Hence, this logit model barely outperformed us guessing that the market will go up every single time. The confusion matrix also gives us insight into the false positive and false negative rate of our model.</p>
+<p>Namely, we see that the false positive rate is about 88%. This means that our model often predicted that the stock market would go up when it actually went down. We also see that our false negative rate is far better at about 8%. This means that about 8% of the times we said the stock market would go down, it went up.</p>
+<p>Unsurprisingly, the biggest problem with our model is that we are too easily predicted that the stock market will go up. This is likely a result of the arbitrary threshold of 0.5 that we chose in running our predictions. However, it could also be a result of our model choice.</p>
+</section>
+</section>
+<section id="part-d" class="level3" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="part-d"><span class="header-section-number">4.4</span> Part (d)</h3>
+<p>Now fit the logistic regression model using a training data period from 1990 to 2008 with <code>Lag2</code> as the only predictor. Compute the confusion matrix and the overall fraction of correct predictions for the hold out data (that is, the data from 2009 and 2010).</p>
+<section id="solution-8" class="level4">
+<h4 class="anchored" data-anchor-id="solution-8">Solution</h4>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Training - testing data</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>cutoff <span class="op">=</span> Weekly.index[Weekly[<span class="st">'Year'</span>] <span class="op">&lt;</span> <span class="dv">2009</span>]</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>Weekly_train <span class="op">=</span> Weekly.iloc[cutoff]</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>Weekly_test <span class="op">=</span> Weekly.drop(cutoff)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>y_test <span class="op">=</span> pd.Series(Weekly_test[<span class="st">'Direction_Up'</span>]).to_numpy()</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>X_test <span class="op">=</span> pd.Series(Weekly_test[<span class="st">'Lag2'</span>]).to_numpy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Training variables</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> pd.Series(Weekly_train[<span class="st">'Lag2'</span>]).to_numpy()</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> pd.Series(Weekly_train[<span class="st">'Direction_Up'</span>]).to_numpy()</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Reshaping to work with sklearn</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>n_samples <span class="op">=</span> X.shape[<span class="dv">0</span>]</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>n_features <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>X_rs <span class="op">=</span> np.reshape(X, (n_samples,n_features))</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipeline</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>pipe_logit <span class="op">=</span> Pipeline(steps <span class="op">=</span> [</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"model"</span>, LogisticRegression())</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit Logistic regression</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>logit_fit <span class="op">=</span> pipe_logit.fit(X_rs,y)</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>logit_fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>Pipeline(steps=[('model', LogisticRegression())])</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>X_test_rs <span class="op">=</span> np.reshape(X_test, (<span class="dv">104</span>,<span class="dv">1</span>))</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Predictions</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>logit_pred <span class="op">=</span> logit_fit.predict(X_test_rs)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, logit_pred)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">'Blues'</span>, fmt<span class="op">=</span><span class="st">'d'</span>,</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>            xticklabels<span class="op">=</span>[<span class="st">'Predicted 0'</span>,<span class="st">'Predicted 1'</span>], </span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>            yticklabels<span class="op">=</span>[<span class="st">'True 0'</span>,<span class="st">'True 1'</span>]).<span class="bu">set</span>(</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>                title<span class="op">=</span><span class="st">'Confusion Matrix (Logit - Lag2)'</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>acc_logit <span class="op">=</span> accuracy_score(y_test, logit_pred)</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Accuracy (Logit): '</span>, acc_logit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy (Logit):  0.625</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Econ425T-Homework3_files/figure-html/cell-14-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Hence, we see from the above confusion matrix and reported accuracy score that <strong>the overall accuracy of this model is about 62.5%</strong>. This is higher than the previous model with more features. Although it may not be an apples to apples comparison since here we are only predicting on the from 2009 to 2010.</p>
+</section>
+</section>
+<section id="part-e" class="level3" data-number="4.5">
+<h3 data-number="4.5" class="anchored" data-anchor-id="part-e"><span class="header-section-number">4.5</span> Part (e)</h3>
+<p>Repeat (d) using Linear Discriminant Analysis.</p>
+<section id="solution-9" class="level4">
+<h4 class="anchored" data-anchor-id="solution-9">Solution</h4>
+<div class="cell" data-execution_count="123">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipeline</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>pipe_lda <span class="op">=</span> Pipeline(steps <span class="op">=</span> [</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"model"</span>, LinearDiscriminantAnalysis())</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit LDA</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>lda_fit <span class="op">=</span> pipe_lda.fit(X_rs,y)</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>lda_fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="123">
+<pre><code>Pipeline(steps=[('model', LinearDiscriminantAnalysis())])</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="124">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Predictions</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>lda_pred <span class="op">=</span> lda_fit.predict(X_test_rs)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, lda_pred)</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">'Blues'</span>, fmt<span class="op">=</span><span class="st">'d'</span>,</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>            xticklabels<span class="op">=</span>[<span class="st">'Predicted 0'</span>,<span class="st">'Predicted 1'</span>], </span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>            yticklabels<span class="op">=</span>[<span class="st">'True 0'</span>,<span class="st">'True 1'</span>]).<span class="bu">set</span>(</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>                title<span class="op">=</span><span class="st">'Confusion Matrix (LDA - Lag2)'</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>acc_lda <span class="op">=</span> accuracy_score(y_test, lda_pred)</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Accuracy (LDA): '</span>, acc_lda)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy (LDA):  0.625</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Econ425T-Homework3_files/figure-html/cell-16-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>We see from the above LDA model that the confusion matrix is identical to that of the Logistic regression model. Subsequently, we see that in this instance, they have the same <strong>accuracy score of 62.5%</strong>.</p>
+</section>
+</section>
+<section id="part-f" class="level3" data-number="4.6">
+<h3 data-number="4.6" class="anchored" data-anchor-id="part-f"><span class="header-section-number">4.6</span> Part (f)</h3>
+<p>Repeat (d) using Quadratic Discriminant Analysis.</p>
+<section id="solution-10" class="level4">
+<h4 class="anchored" data-anchor-id="solution-10">Solution</h4>
+<div class="cell" data-execution_count="126">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipeline</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>pipe_qda <span class="op">=</span> Pipeline(steps <span class="op">=</span> [</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"model"</span>, QuadraticDiscriminantAnalysis())</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit QDA</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>qda_fit <span class="op">=</span> pipe_qda.fit(X_rs,y)</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>qda_fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="126">
+<pre><code>Pipeline(steps=[('model', QuadraticDiscriminantAnalysis())])</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="127">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Predictions</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>qda_pred <span class="op">=</span> qda_fit.predict(X_test_rs)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, qda_pred)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">'Blues'</span>, fmt<span class="op">=</span><span class="st">'d'</span>,</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>            xticklabels<span class="op">=</span>[<span class="st">'Predicted 0'</span>,<span class="st">'Predicted 1'</span>], </span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>            yticklabels<span class="op">=</span>[<span class="st">'True 0'</span>,<span class="st">'True 1'</span>]).<span class="bu">set</span>(</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>                title<span class="op">=</span><span class="st">'Confusion Matrix (QDA - Lag2)'</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>acc_qda <span class="op">=</span> accuracy_score(y_test, qda_pred)</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Accuracy (QDA): '</span>, acc_qda)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy (QDA):  0.5865384615384616</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Econ425T-Homework3_files/figure-html/cell-18-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Interestingly in the QDA model, there were no predicted 0s (or instances where the stock market went down). This leads us to get an <strong>accuracy score of about 58.6%</strong>. This is lower than our previous attempts which might lead us to belive that the decision boundaries for the classification problem are not quadratic.</p>
+</section>
+</section>
+<section id="part-g" class="level3" data-number="4.7">
+<h3 data-number="4.7" class="anchored" data-anchor-id="part-g"><span class="header-section-number">4.7</span> Part (g)</h3>
+<p>Repeat (d) with KNN with <span class="math inline">K=1</span>.</p>
+<section id="solution-11" class="level4">
+<h4 class="anchored" data-anchor-id="solution-11">Solution</h4>
+<div class="cell" data-execution_count="129">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipeline</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>pipe_knn <span class="op">=</span> Pipeline(steps <span class="op">=</span> [</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"model"</span>, KNeighborsClassifier(n_neighbors<span class="op">=</span><span class="dv">1</span>))</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit KNN with K = 1</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>knn_fit <span class="op">=</span> pipe_knn.fit(X_rs,y)</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>knn_fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="129">
+<pre><code>Pipeline(steps=[('model', KNeighborsClassifier(n_neighbors=1))])</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="132">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Predictions</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>knn_pred <span class="op">=</span> knn_fit.predict(X_test_rs)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, knn_pred)</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">'Blues'</span>, fmt<span class="op">=</span><span class="st">'d'</span>,</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>            xticklabels<span class="op">=</span>[<span class="st">'Predicted 0'</span>,<span class="st">'Predicted 1'</span>], </span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>            yticklabels<span class="op">=</span>[<span class="st">'True 0'</span>,<span class="st">'True 1'</span>]).<span class="bu">set</span>(</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>                title<span class="op">=</span><span class="st">'Confusion Matrix (KNN [$K=1$] - Lag2)'</span></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>acc_knn <span class="op">=</span> accuracy_score(y_test, knn_pred)</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Accuracy (KNN, K=1): '</span>, acc_knn)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy (KNN, K=1):  0.5096153846153846</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Econ425T-Homework3_files/figure-html/cell-20-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The K-Nearest Neighbor model with <span class="math inline">K=1</span> has performed the worst so far in terms of <strong>accuracy with a score of about 51%</strong>.</p>
+</section>
+</section>
+<section id="part-h" class="level3" data-number="4.8">
+<h3 data-number="4.8" class="anchored" data-anchor-id="part-h"><span class="header-section-number">4.8</span> Part (h)</h3>
+<p>Repeat (d) using naive Bayes.</p>
+<section id="solution-12" class="level4">
+<h4 class="anchored" data-anchor-id="solution-12">Solution</h4>
+<div class="cell" data-execution_count="134">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipeline</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>pipe_nb <span class="op">=</span> Pipeline(steps <span class="op">=</span> [</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"model"</span>, GaussianNB())</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit  Naive Bayes classifier</span></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>nb_fit <span class="op">=</span> pipe_nb.fit(X_rs,y)</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>nb_fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="134">
+<pre><code>Pipeline(steps=[('model', GaussianNB())])</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="135">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Predictions</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>nb_pred <span class="op">=</span> nb_fit.predict(X_test_rs)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, nb_pred)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">'Blues'</span>, fmt<span class="op">=</span><span class="st">'d'</span>,</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>            xticklabels<span class="op">=</span>[<span class="st">'Predicted 0'</span>,<span class="st">'Predicted 1'</span>], </span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>            yticklabels<span class="op">=</span>[<span class="st">'True 0'</span>,<span class="st">'True 1'</span>]).<span class="bu">set</span>(</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>                title<span class="op">=</span><span class="st">'Confusion Matrix (Naive Bayes - Lag2)'</span></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>acc_nb <span class="op">=</span> accuracy_score(y_test, nb_pred)</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Accuracy (Naive Bayes): '</span>, acc_nb)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy (Naive Bayes):  0.5865384615384616</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Econ425T-Homework3_files/figure-html/cell-22-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Just like QDA, the naive Bayes model ends up predicting every input as a 1 (i.e., the stock market will go up). Thus it achieves an <strong>accuracy score of about 58.6%</strong> which is the same as QDA. It is also the same as just predicting the most popular class (in this case, the stock market going up).</p>
+</section>
+</section>
+<section id="part-i" class="level3" data-number="4.9">
+<h3 data-number="4.9" class="anchored" data-anchor-id="part-i"><span class="header-section-number">4.9</span> Part (i)</h3>
+<p>Which of these methods appears to provide the best results on this data?</p>
+<section id="solution-13" class="level4">
+<h4 class="anchored" data-anchor-id="solution-13">Solution</h4>
+<p>If we use accuracy score as our metric, then the two best models are <strong>Logistic Regression</strong> and <strong>Linear Discriminant Analysis</strong>. In particular, they have the same accuracy score which is higher than all other models tested with this data.</p>
+<p>For robustness, we will consider a different metric – AUC.</p>
+<div class="cell" data-execution_count="142">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Robustness under AUC scores</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>logit_auc <span class="op">=</span> roc_auc_score(</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>  y_test,</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>  logit_fit.predict_proba(X_test_rs)[:, <span class="dv">1</span>]</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>lda_auc <span class="op">=</span> roc_auc_score(</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>  y_test,</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>  lda_fit.predict_proba(X_test_rs)[:, <span class="dv">1</span>]</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>qda_auc <span class="op">=</span> roc_auc_score(</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>  y_test,</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>  qda_fit.predict_proba(X_test_rs)[:, <span class="dv">1</span>]</span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>knn_auc <span class="op">=</span> roc_auc_score(</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>  y_test,</span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>  knn_fit.predict_proba(X_test_rs)[:, <span class="dv">1</span>]</span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>nb_auc <span class="op">=</span> roc_auc_score(</span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>  y_test,</span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a>  nb_fit.predict_proba(X_test_rs)[:, <span class="dv">1</span>]</span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'AUC (Logit): '</span>, logit_auc)</span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'AUC (LDA): '</span>, lda_auc)</span>
+<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'AUC (QDA): '</span>, qda_auc)</span>
+<span id="cb37-25"><a href="#cb37-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'AUC (KNN, K=1): '</span>, knn_auc)</span>
+<span id="cb37-26"><a href="#cb37-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'AUC (Naive Bayes): '</span>, nb_auc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>AUC (Logit):  0.5463210064811285
+AUC (LDA):  0.5463210064811285
+AUC (QDA):  0.508577964163172
+AUC (KNN, K=1):  0.5099123141441098
+AUC (Naive Bayes):  0.5074342356080823</code></pre>
+</div>
+</div>
+<p>We see that the results do not really change when we consider a different metric like AUC. Logit and LDA still outperform every other model tested on this data.</p>
+</section>
+</section>
+</section>
+<section id="bonus-question-isl-exercise-4.8.13-part-j-30pts" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="bonus-question-isl-exercise-4.8.13-part-j-30pts"><span class="header-section-number">5</span> Bonus question: ISL Exercise 4.8.13 Part (j) (30pts)</h2>
+<p>Experiment with different combinations of predictors, including possible transformations and interactions, for each of the methods. Report the variables, method, and associated confusion matrix that appears to provide the best results on the held out data. Note that you should also experiment with values for <span class="math inline">K</span> in KNN classifier.</p>
+<section id="solution-14" class="level4">
+<h4 class="anchored" data-anchor-id="solution-14">Solution</h4>
+<p>We will begin by using <code>PolynomialFeatures</code> from <code>sklearn</code> to include all quadratic combinations of our features. Then we will use <code>SelectKBest</code> from there onwards to select only the <span class="math inline">k</span> best features for each model. We will decide on the optimal <span class="math inline">k</span> using cross-validation. We will test all of the previously explored models. Additionally, for the KNN model, we will cross validate <strong>both the optimal number of features and the optimal number of neighbors</strong>.</p>
+<div class="cell" data-execution_count="46">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Additional sklearn imports</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> PolynomialFeatures</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_selection <span class="im">import</span> SelectKBest, f_classif</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> GridSearchCV</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Testing - Testing data</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>cutoff <span class="op">=</span> Weekly.index[Weekly[<span class="st">'Year'</span>] <span class="op">&lt;</span> <span class="dv">2009</span>]</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>Weekly_train <span class="op">=</span> Weekly.iloc[cutoff]</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>Weekly_test <span class="op">=</span> Weekly.drop(cutoff)</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>y_test <span class="op">=</span> pd.Series(Weekly_test[<span class="st">'Direction_Up'</span>]).to_numpy()</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>X_test <span class="op">=</span> Weekly_test.drop([<span class="st">'Direction_Up'</span>, <span class="st">'Today'</span>], axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Training variables</span></span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> Weekly_train.drop([<span class="st">'Direction_Up'</span>, <span class="st">'Today'</span>], axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> pd.Series(Weekly_train[<span class="st">'Direction_Up'</span>]).to_numpy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="41">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Logistic Regression with polynomial features</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="co">## Takes all quadratic combination of original features</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>polyfeat <span class="op">=</span> PolynomialFeatures(degree<span class="op">=</span><span class="dv">2</span>, include_bias<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipeline</span></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>pipe_logit_poly <span class="op">=</span> Pipeline(steps <span class="op">=</span> [</span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"poly"</span>, polyfeat),</span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"model"</span>, LogisticRegression())</span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit Logistic regression</span></span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a>logit_poly_fit <span class="op">=</span> pipe_logit_poly.fit(X,y)</span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Predictions</span></span>
+<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a>logit_poly_pred <span class="op">=</span> logit_poly_fit.predict(X_test)</span>
+<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, logit_poly_pred)</span>
+<span id="cb41-17"><a href="#cb41-17" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">'Blues'</span>, fmt<span class="op">=</span><span class="st">'d'</span>,</span>
+<span id="cb41-18"><a href="#cb41-18" aria-hidden="true" tabindex="-1"></a>            xticklabels<span class="op">=</span>[<span class="st">'Predicted 0'</span>,<span class="st">'Predicted 1'</span>], </span>
+<span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a>            yticklabels<span class="op">=</span>[<span class="st">'True 0'</span>,<span class="st">'True 1'</span>]).<span class="bu">set</span>(</span>
+<span id="cb41-20"><a href="#cb41-20" aria-hidden="true" tabindex="-1"></a>                title<span class="op">=</span><span class="st">'Confusion Matrix (Logit w/ all quad features)'</span></span>
+<span id="cb41-21"><a href="#cb41-21" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb41-22"><a href="#cb41-22" aria-hidden="true" tabindex="-1"></a>acc_logit_poly <span class="op">=</span> accuracy_score(y_test, logit_poly_pred)</span>
+<span id="cb41-23"><a href="#cb41-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Accuracy (Logit w/ quad features): '</span>, acc_logit_poly)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy (Logit w/ quad features):  0.46153846153846156</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Econ425T-Homework3_files/figure-html/cell-26-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="60">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Logistic Regression with K best features</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>kbest <span class="op">=</span> SelectKBest(score_func<span class="op">=</span>f_classif)</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipeline</span></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>pipe_logit_kbest <span class="op">=</span> Pipeline(steps <span class="op">=</span> [</span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"kbest"</span>, kbest),</span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"model"</span>, LogisticRegression())</span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameter grid for CV</span></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>param_grid <span class="op">=</span> {<span class="st">'kbest__k'</span>: [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>]}</span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Set up CV</span></span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>cv_logit <span class="op">=</span> GridSearchCV(</span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>    pipe_logit_kbest,</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>    param_grid<span class="op">=</span>param_grid,</span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>    cv<span class="op">=</span><span class="dv">5</span>,</span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a>    scoring<span class="op">=</span><span class="st">"accuracy"</span>,</span>
+<span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a>    refit<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-21"><a href="#cb43-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit Logistic regression</span></span>
+<span id="cb43-22"><a href="#cb43-22" aria-hidden="true" tabindex="-1"></a>logit_kbest_fit <span class="op">=</span> cv_logit.fit(X,y)</span>
+<span id="cb43-23"><a href="#cb43-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-24"><a href="#cb43-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Predictions</span></span>
+<span id="cb43-25"><a href="#cb43-25" aria-hidden="true" tabindex="-1"></a>logit_kbest_pred <span class="op">=</span> logit_kbest_fit.predict(X_test)</span>
+<span id="cb43-26"><a href="#cb43-26" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, logit_kbest_pred)</span>
+<span id="cb43-27"><a href="#cb43-27" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">'Blues'</span>, fmt<span class="op">=</span><span class="st">'d'</span>,</span>
+<span id="cb43-28"><a href="#cb43-28" aria-hidden="true" tabindex="-1"></a>            xticklabels<span class="op">=</span>[<span class="st">'Predicted 0'</span>,<span class="st">'Predicted 1'</span>], </span>
+<span id="cb43-29"><a href="#cb43-29" aria-hidden="true" tabindex="-1"></a>            yticklabels<span class="op">=</span>[<span class="st">'True 0'</span>,<span class="st">'True 1'</span>]).<span class="bu">set</span>(</span>
+<span id="cb43-30"><a href="#cb43-30" aria-hidden="true" tabindex="-1"></a>                title<span class="op">=</span><span class="st">'Confusion Matrix (Logit w/ all k-best features)'</span></span>
+<span id="cb43-31"><a href="#cb43-31" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb43-32"><a href="#cb43-32" aria-hidden="true" tabindex="-1"></a>acc_logit_kbest <span class="op">=</span> accuracy_score(y_test, logit_kbest_pred)</span>
+<span id="cb43-33"><a href="#cb43-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Accuracy (Logit w/ k-best features): '</span>, acc_logit_kbest)</span>
+<span id="cb43-34"><a href="#cb43-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best parameters:"</span>, cv_logit.best_params_)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy (Logit w/ k-best features):  0.5096153846153846
+Best parameters: {'kbest__k': 6}</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Econ425T-Homework3_files/figure-html/cell-27-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="68">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># LDA with K best features</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>kbest <span class="op">=</span> SelectKBest(score_func<span class="op">=</span>f_classif)</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipeline</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>pipe_lda_kbest <span class="op">=</span> Pipeline(steps <span class="op">=</span> [</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"kbest"</span>, kbest),</span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"model"</span>, LinearDiscriminantAnalysis())</span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameter grid for CV</span></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>param_grid <span class="op">=</span> {<span class="st">'kbest__k'</span>: [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>]}</span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Set up CV</span></span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a>cv_lda <span class="op">=</span> GridSearchCV(</span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a>    pipe_lda_kbest,</span>
+<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a>    param_grid<span class="op">=</span>param_grid,</span>
+<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a>    cv<span class="op">=</span><span class="dv">5</span>,</span>
+<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a>    scoring<span class="op">=</span><span class="st">"accuracy"</span>,</span>
+<span id="cb45-19"><a href="#cb45-19" aria-hidden="true" tabindex="-1"></a>    refit<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb45-20"><a href="#cb45-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-21"><a href="#cb45-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit LDA</span></span>
+<span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a>lda_kbest_fit <span class="op">=</span> cv_lda.fit(X,y)</span>
+<span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-24"><a href="#cb45-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Predictions</span></span>
+<span id="cb45-25"><a href="#cb45-25" aria-hidden="true" tabindex="-1"></a>lda_kbest_pred <span class="op">=</span> lda_kbest_fit.predict(X_test)</span>
+<span id="cb45-26"><a href="#cb45-26" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, lda_kbest_pred)</span>
+<span id="cb45-27"><a href="#cb45-27" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">'Blues'</span>, fmt<span class="op">=</span><span class="st">'d'</span>,</span>
+<span id="cb45-28"><a href="#cb45-28" aria-hidden="true" tabindex="-1"></a>            xticklabels<span class="op">=</span>[<span class="st">'Predicted 0'</span>,<span class="st">'Predicted 1'</span>], </span>
+<span id="cb45-29"><a href="#cb45-29" aria-hidden="true" tabindex="-1"></a>            yticklabels<span class="op">=</span>[<span class="st">'True 0'</span>,<span class="st">'True 1'</span>]).<span class="bu">set</span>(</span>
+<span id="cb45-30"><a href="#cb45-30" aria-hidden="true" tabindex="-1"></a>                title<span class="op">=</span><span class="st">'Confusion Matrix (LDA w/ all k-best features)'</span></span>
+<span id="cb45-31"><a href="#cb45-31" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb45-32"><a href="#cb45-32" aria-hidden="true" tabindex="-1"></a>acc_lda_kbest <span class="op">=</span> accuracy_score(y_test, lda_kbest_pred)</span>
+<span id="cb45-33"><a href="#cb45-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Accuracy (LDA w/ k-best features): '</span>, acc_lda_kbest)</span>
+<span id="cb45-34"><a href="#cb45-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best parameters:"</span>, cv_lda.best_params_)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy (LDA w/ k-best features):  0.5673076923076923
+Best parameters: {'kbest__k': 1}</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Econ425T-Homework3_files/figure-html/cell-28-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="69">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># QDA with K best features</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>kbest <span class="op">=</span> SelectKBest(score_func<span class="op">=</span>f_classif)</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipeline</span></span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>pipe_qda_kbest <span class="op">=</span> Pipeline(steps <span class="op">=</span> [</span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"kbest"</span>, kbest),</span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"model"</span>, QuadraticDiscriminantAnalysis())</span>
+<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameter grid for CV</span></span>
+<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a>param_grid <span class="op">=</span> {<span class="st">'kbest__k'</span>: [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>]}</span>
+<span id="cb47-12"><a href="#cb47-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-13"><a href="#cb47-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Set up CV</span></span>
+<span id="cb47-14"><a href="#cb47-14" aria-hidden="true" tabindex="-1"></a>cv_qda <span class="op">=</span> GridSearchCV(</span>
+<span id="cb47-15"><a href="#cb47-15" aria-hidden="true" tabindex="-1"></a>    pipe_qda_kbest,</span>
+<span id="cb47-16"><a href="#cb47-16" aria-hidden="true" tabindex="-1"></a>    param_grid<span class="op">=</span>param_grid,</span>
+<span id="cb47-17"><a href="#cb47-17" aria-hidden="true" tabindex="-1"></a>    cv<span class="op">=</span><span class="dv">5</span>,</span>
+<span id="cb47-18"><a href="#cb47-18" aria-hidden="true" tabindex="-1"></a>    scoring<span class="op">=</span><span class="st">"accuracy"</span>,</span>
+<span id="cb47-19"><a href="#cb47-19" aria-hidden="true" tabindex="-1"></a>    refit<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb47-20"><a href="#cb47-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-21"><a href="#cb47-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit QDA</span></span>
+<span id="cb47-22"><a href="#cb47-22" aria-hidden="true" tabindex="-1"></a>qda_kbest_fit <span class="op">=</span> cv_qda.fit(X,y)</span>
+<span id="cb47-23"><a href="#cb47-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-24"><a href="#cb47-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Predictions</span></span>
+<span id="cb47-25"><a href="#cb47-25" aria-hidden="true" tabindex="-1"></a>qda_kbest_pred <span class="op">=</span> qda_kbest_fit.predict(X_test)</span>
+<span id="cb47-26"><a href="#cb47-26" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, qda_kbest_pred)</span>
+<span id="cb47-27"><a href="#cb47-27" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">'Blues'</span>, fmt<span class="op">=</span><span class="st">'d'</span>,</span>
+<span id="cb47-28"><a href="#cb47-28" aria-hidden="true" tabindex="-1"></a>            xticklabels<span class="op">=</span>[<span class="st">'Predicted 0'</span>,<span class="st">'Predicted 1'</span>], </span>
+<span id="cb47-29"><a href="#cb47-29" aria-hidden="true" tabindex="-1"></a>            yticklabels<span class="op">=</span>[<span class="st">'True 0'</span>,<span class="st">'True 1'</span>]).<span class="bu">set</span>(</span>
+<span id="cb47-30"><a href="#cb47-30" aria-hidden="true" tabindex="-1"></a>                title<span class="op">=</span><span class="st">'Confusion Matrix (QDA w/ all k-best features)'</span></span>
+<span id="cb47-31"><a href="#cb47-31" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb47-32"><a href="#cb47-32" aria-hidden="true" tabindex="-1"></a>acc_qda_kbest <span class="op">=</span> accuracy_score(y_test, qda_kbest_pred)</span>
+<span id="cb47-33"><a href="#cb47-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Accuracy (QDA w/ k-best features): '</span>, acc_qda_kbest)</span>
+<span id="cb47-34"><a href="#cb47-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best parameters:"</span>, cv_qda.best_params_)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy (QDA w/ k-best features):  0.46153846153846156
+Best parameters: {'kbest__k': 3}</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Econ425T-Homework3_files/figure-html/cell-29-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="78">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># K Nearest Neighbor Classifier</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>kbest <span class="op">=</span> SelectKBest(score_func<span class="op">=</span>f_classif)</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipeline</span></span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>pipe_knn_kbest <span class="op">=</span> Pipeline(steps <span class="op">=</span> [</span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"kbest"</span>, kbest),</span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"knn"</span>, KNeighborsClassifier())</span>
+<span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameter grid for CV</span></span>
+<span id="cb49-11"><a href="#cb49-11" aria-hidden="true" tabindex="-1"></a>param_grid <span class="op">=</span> {<span class="st">'kbest__k'</span>: [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>],</span>
+<span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a>              <span class="st">'knn__n_neighbors'</span>: [<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">10</span>]}</span>
+<span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-14"><a href="#cb49-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Set up CV</span></span>
+<span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a>cv_knn <span class="op">=</span> GridSearchCV(</span>
+<span id="cb49-16"><a href="#cb49-16" aria-hidden="true" tabindex="-1"></a>    pipe_knn_kbest,</span>
+<span id="cb49-17"><a href="#cb49-17" aria-hidden="true" tabindex="-1"></a>    param_grid<span class="op">=</span>param_grid,</span>
+<span id="cb49-18"><a href="#cb49-18" aria-hidden="true" tabindex="-1"></a>    cv<span class="op">=</span><span class="dv">5</span>,</span>
+<span id="cb49-19"><a href="#cb49-19" aria-hidden="true" tabindex="-1"></a>    scoring<span class="op">=</span><span class="st">"accuracy"</span>,</span>
+<span id="cb49-20"><a href="#cb49-20" aria-hidden="true" tabindex="-1"></a>    refit<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb49-21"><a href="#cb49-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-22"><a href="#cb49-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit cross validated KNN</span></span>
+<span id="cb49-23"><a href="#cb49-23" aria-hidden="true" tabindex="-1"></a>knn_kbest_fit <span class="op">=</span> cv_knn.fit(X,y)</span>
+<span id="cb49-24"><a href="#cb49-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-25"><a href="#cb49-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Predictions</span></span>
+<span id="cb49-26"><a href="#cb49-26" aria-hidden="true" tabindex="-1"></a>knn_kbest_pred <span class="op">=</span> knn_kbest_fit.predict(X_test)</span>
+<span id="cb49-27"><a href="#cb49-27" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, knn_kbest_pred)</span>
+<span id="cb49-28"><a href="#cb49-28" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">'Blues'</span>, fmt<span class="op">=</span><span class="st">'d'</span>,</span>
+<span id="cb49-29"><a href="#cb49-29" aria-hidden="true" tabindex="-1"></a>            xticklabels<span class="op">=</span>[<span class="st">'Predicted 0'</span>,<span class="st">'Predicted 1'</span>], </span>
+<span id="cb49-30"><a href="#cb49-30" aria-hidden="true" tabindex="-1"></a>            yticklabels<span class="op">=</span>[<span class="st">'True 0'</span>,<span class="st">'True 1'</span>]).<span class="bu">set</span>(</span>
+<span id="cb49-31"><a href="#cb49-31" aria-hidden="true" tabindex="-1"></a>                title<span class="op">=</span><span class="st">'Confusion Matrix (KNN (K=k) w/ all k-best features)'</span></span>
+<span id="cb49-32"><a href="#cb49-32" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb49-33"><a href="#cb49-33" aria-hidden="true" tabindex="-1"></a>acc_knn_kbest <span class="op">=</span> accuracy_score(y_test, knn_kbest_pred)</span>
+<span id="cb49-34"><a href="#cb49-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Accuracy (KNN w/ k-best features): '</span>, acc_knn_kbest)</span>
+<span id="cb49-35"><a href="#cb49-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best parameters:"</span>, cv_knn.best_params_)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy (KNN w/ k-best features):  0.47115384615384615
+Best parameters: {'kbest__k': 5, 'knn__n_neighbors': 1}</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Econ425T-Homework3_files/figure-html/cell-30-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="73">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Naive Bayes with K best features</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>kbest <span class="op">=</span> SelectKBest(score_func<span class="op">=</span>f_classif)</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipeline</span></span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>pipe_nb_kbest <span class="op">=</span> Pipeline(steps <span class="op">=</span> [</span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"kbest"</span>, kbest),</span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a>    (<span class="st">"model"</span>, GaussianNB())</span>
+<span id="cb51-8"><a href="#cb51-8" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb51-9"><a href="#cb51-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-10"><a href="#cb51-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameter grid for CV</span></span>
+<span id="cb51-11"><a href="#cb51-11" aria-hidden="true" tabindex="-1"></a>param_grid <span class="op">=</span> {<span class="st">'kbest__k'</span>: [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>]}</span>
+<span id="cb51-12"><a href="#cb51-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-13"><a href="#cb51-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Set up CV</span></span>
+<span id="cb51-14"><a href="#cb51-14" aria-hidden="true" tabindex="-1"></a>cv_nb <span class="op">=</span> GridSearchCV(</span>
+<span id="cb51-15"><a href="#cb51-15" aria-hidden="true" tabindex="-1"></a>    pipe_nb_kbest,</span>
+<span id="cb51-16"><a href="#cb51-16" aria-hidden="true" tabindex="-1"></a>    param_grid<span class="op">=</span>param_grid,</span>
+<span id="cb51-17"><a href="#cb51-17" aria-hidden="true" tabindex="-1"></a>    cv<span class="op">=</span><span class="dv">5</span>,</span>
+<span id="cb51-18"><a href="#cb51-18" aria-hidden="true" tabindex="-1"></a>    scoring<span class="op">=</span><span class="st">"accuracy"</span>,</span>
+<span id="cb51-19"><a href="#cb51-19" aria-hidden="true" tabindex="-1"></a>    refit<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb51-20"><a href="#cb51-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-21"><a href="#cb51-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit Naive Bayes</span></span>
+<span id="cb51-22"><a href="#cb51-22" aria-hidden="true" tabindex="-1"></a>nb_kbest_fit <span class="op">=</span> cv_nb.fit(X,y)</span>
+<span id="cb51-23"><a href="#cb51-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-24"><a href="#cb51-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Predictions</span></span>
+<span id="cb51-25"><a href="#cb51-25" aria-hidden="true" tabindex="-1"></a>nb_kbest_pred <span class="op">=</span> nb_kbest_fit.predict(X_test)</span>
+<span id="cb51-26"><a href="#cb51-26" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, nb_kbest_pred)</span>
+<span id="cb51-27"><a href="#cb51-27" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">'Blues'</span>, fmt<span class="op">=</span><span class="st">'d'</span>,</span>
+<span id="cb51-28"><a href="#cb51-28" aria-hidden="true" tabindex="-1"></a>            xticklabels<span class="op">=</span>[<span class="st">'Predicted 0'</span>,<span class="st">'Predicted 1'</span>], </span>
+<span id="cb51-29"><a href="#cb51-29" aria-hidden="true" tabindex="-1"></a>            yticklabels<span class="op">=</span>[<span class="st">'True 0'</span>,<span class="st">'True 1'</span>]).<span class="bu">set</span>(</span>
+<span id="cb51-30"><a href="#cb51-30" aria-hidden="true" tabindex="-1"></a>                title<span class="op">=</span><span class="st">'Confusion Matrix (Naive Bayes w/ all k-best features)'</span></span>
+<span id="cb51-31"><a href="#cb51-31" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb51-32"><a href="#cb51-32" aria-hidden="true" tabindex="-1"></a>acc_nb_kbest <span class="op">=</span> accuracy_score(y_test, nb_kbest_pred)</span>
+<span id="cb51-33"><a href="#cb51-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Accuracy (Naive Bayes w/ k-best features): '</span>, acc_nb_kbest)</span>
+<span id="cb51-34"><a href="#cb51-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best parameters:"</span>, cv_nb.best_params_)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy (Naive Bayes w/ k-best features):  0.5865384615384616
+Best parameters: {'kbest__k': 1}</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Econ425T-Homework3_files/figure-html/cell-31-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="80">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'ALL ACCURACY SCORE FOR MODELS'</span>)</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'========================================='</span>)</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'(Logit w/ quad features): '</span>, acc_logit_poly)</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'---------------------------------------------------------'</span>)</span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'(Logit w/ k-best features): '</span>, acc_logit_kbest)</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best parameters:"</span>, cv_logit.best_params_)</span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'---------------------------------------------------------'</span>)</span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'(LDA w/ k-best features): '</span>, acc_lda_kbest)</span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best parameters:"</span>, cv_lda.best_params_)</span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'---------------------------------------------------------'</span>)</span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'(QDA w/ k-best features): '</span>, acc_qda_kbest)</span>
+<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best parameters:"</span>, cv_qda.best_params_)</span>
+<span id="cb53-13"><a href="#cb53-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'---------------------------------------------------------'</span>)</span>
+<span id="cb53-14"><a href="#cb53-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'(KNN w/ k-best features): '</span>, acc_knn_kbest)</span>
+<span id="cb53-15"><a href="#cb53-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best parameters:"</span>, cv_knn.best_params_)</span>
+<span id="cb53-16"><a href="#cb53-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'---------------------------------------------------------'</span>)</span>
+<span id="cb53-17"><a href="#cb53-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'(Naive Bayes w/ k-best features): '</span>, acc_nb_kbest)</span>
+<span id="cb53-18"><a href="#cb53-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best parameters:"</span>, cv_nb.best_params_)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>ALL ACCURACY SCORE FOR MODELS
+=========================================
+(Logit w/ quad features):  0.46153846153846156
+---------------------------------------------------------
+(Logit w/ k-best features):  0.5096153846153846
+Best parameters: {'kbest__k': 6}
+---------------------------------------------------------
+(LDA w/ k-best features):  0.5673076923076923
+Best parameters: {'kbest__k': 1}
+---------------------------------------------------------
+(QDA w/ k-best features):  0.46153846153846156
+Best parameters: {'kbest__k': 3}
+---------------------------------------------------------
+(KNN w/ k-best features):  0.47115384615384615
+Best parameters: {'kbest__k': 5, 'knn__n_neighbors': 1}
+---------------------------------------------------------
+(Naive Bayes w/ k-best features):  0.5865384615384616
+Best parameters: {'kbest__k': 1}</code></pre>
+</div>
+</div>
+<p>From the above printout, it is clear that our exploration of alternative models was largely unsuccessful. Of the explored models, the <strong>Naive Bayes</strong> with 1 feature performed the best (in terms of accuracy score). Granted, some of this may be because our optimal number of feature cross validation was done for optimizing f score (there was no default option for accuracy). Hence, these results may improve if our metric was f-score or AUC instead of accuracy. However, with accuracy as our performance metric, the best overall model is still the Logistic Regression or LDA model from the previous parts.</p>
+</section>
+</section>
+<section id="bonus-question-isl-exercise-4.8.4-30pts" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="bonus-question-isl-exercise-4.8.4-30pts"><span class="header-section-number">6</span> Bonus question: ISL Exercise 4.8.4 (30pts)</h2>
+<p>When the number of features <span class="math inline">p</span> is large, there tends to be a deterioration in the performance of KNN and other <em>local</em> approaches that perform prediction using only observations that are near the test observation for which a prediction must be made. This phenomenon is known as the curse of dimensionality, and it ties into the fact that non-parametric approaches often perform poorly when <span class="math inline">p</span> is large. We will now investigate this curse.</p>
+<section id="part-a-3" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="part-a-3"><span class="header-section-number">6.1</span> Part (a)</h3>
+<p>Suppose that we have a set of observations, each with measurements on <span class="math inline">p=1</span> feature, <span class="math inline">X</span>. We assume that <span class="math inline">X</span> is uniformly (evenly) distributed on <span class="math inline">[0,1]</span>. Associated with each observation is a response value. Suppose that we wish to predict a test observation’s response using only observations that are within 10% of the range of <span class="math inline">X</span> closest to that test observation. For instance, in order to predict the response for a test observation with <span class="math inline">X = 0.6</span>, we will use observations in the range <span class="math inline">[0.55,0.65]</span>. On average, what fraction of the available observations will we use to make the prediction?</p>
+<section id="solution-15" class="level4">
+<h4 class="anchored" data-anchor-id="solution-15">Solution</h4>
+<p>Since our random variable <span class="math inline">X</span> is uniformly distributed on the interval <span class="math inline">[0,1]</span>, it will take every value on the interval with equal probability. Furthermore, since we are using a 10% range, <strong>we will be using 10% of our total data</strong> (information) on average.</p>
+</section>
+</section>
+<section id="part-b-3" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="part-b-3"><span class="header-section-number">6.2</span> Part (b)</h3>
+<p>Now suppose that we have a set of observations, each with measurements on <span class="math inline">p=2</span> features, <span class="math inline">X_1</span>, and <span class="math inline">X_2</span>. We assume that <span class="math inline">(X_1 , X_2)</span> are uniformly distributed on <span class="math inline">[0,1] \times [0,1]</span>. We wish to predict a test observation’s response using only observations that are within 10% of the range of <span class="math inline">X_1</span> <em>and</em> within 10% of the range of <span class="math inline">X_2</span> closest t othat test observation. For instance, in order to predict the response for a test observation with <span class="math inline">X_1 = 0.6</span> and <span class="math inline">X_2 = 0.35</span>, we will use observations in the range <span class="math inline">[0.55,0.65]</span> for <span class="math inline">X_1</span> and in the range <span class="math inline">[0.3,0.4]</span> for <span class="math inline">X_2</span>. On average, what fraction of the available observations will we use to make the prediction?</p>
+<section id="solution-16" class="level4">
+<h4 class="anchored" data-anchor-id="solution-16">Solution</h4>
+<p>We only want to use observations wthin 10% of <strong>both</strong> <span class="math inline">X_1</span> and <span class="math inline">X_2</span> for our prediction. This ultimately boils down to a problem of intersection. Hence, we can simply rely on multiplication and find the intersection of data that lie within 10% of <span class="math inline">X_1</span> and <span class="math inline">X_2</span>:</p>
+<p><span class="math display">\text{10\% Range of }X_1 \cap  \text{10\% Range of }X_2 = 0.1 \times 0.1 = 0.01 = 1\%</span></p>
+<p>Hence, only <strong>1% of our data will be available for use in prediction</strong>.</p>
+</section>
+</section>
+<section id="part-c-1" class="level3" data-number="6.3">
+<h3 data-number="6.3" class="anchored" data-anchor-id="part-c-1"><span class="header-section-number">6.3</span> Part (c)</h3>
+<p>Now suppose that we have a set of observations on <span class="math inline">p=100</span> fatures. Again the obsevations are uniformly distributed on each feature, and again each feature ranges in value from 0 to 1. We wish to predict a test obsevation’s response using observations within the 10% of each feature’s range that is closest to that test observation. What fraction of the available observations will we use to make the prediction?</p>
+<section id="solution-17" class="level4">
+<h4 class="anchored" data-anchor-id="solution-17">Solution</h4>
+<p>Following the same logic as in part (a) and part (b) we set up the intersection as:</p>
+<p><span class="math display">\bigcap_{p=1}^{100} \text{10\% Range of }X_p = (0.1)^{100} \approx 10^{-98}\%</span></p>
+<p>As we can see the amount of data available for prediction rapidly diminishes as we increase the number of features.</p>
+</section>
+</section>
+<section id="part-d-1" class="level3" data-number="6.4">
+<h3 data-number="6.4" class="anchored" data-anchor-id="part-d-1"><span class="header-section-number">6.4</span> Part (d)</h3>
+<p>Using your answers to parts (a)-(c), argue that a drawback of KNN when <span class="math inline">p</span> is large is that there are very few training observations “near” any given test observation.</p>
+<section id="solution-18" class="level4">
+<h4 class="anchored" data-anchor-id="solution-18">Solution</h4>
+<p>We want to aruge that a drawback of KNN is that when <span class="math inline">p</span> is large, there are very few training observations “near” any given test observation. Namely, when we think of observations as being “near” another, we are thinking of some measure of distance – typically Euclidean. As seen in the previous parts, the percentage of observations near the test point converges to 0 as <span class="math inline">p \to \infty</span>. But as shown, <span class="math inline">p</span> does not need to be that large for the percentage of available data to become negligably small. The logic behind this is that the training observations need to be “near” our testing observation in <em>every</em> dimension. And as we increase the number of dimensions (features, <span class="math inline">p</span>) it gets increasingly less likely. THe higher the dimensionality of the problem, the fewer neighbors the testing observation is likely to have.</p>
+</section>
+</section>
+<section id="part-e-1" class="level3" data-number="6.5">
+<h3 data-number="6.5" class="anchored" data-anchor-id="part-e-1"><span class="header-section-number">6.5</span> Part (e)</h3>
+<p>Now suppose that we wish to make a prediction for a test observation by creating a <span class="math inline">p</span>-dimensional hypercube centered around the test observations that contains, on average, 10% of the training observations. For <span class="math inline">p=1,2</span> and 100, what is the length of each side of the hypercube? Comment on your answer.</p>
+<section id="solution-19" class="level4">
+<h4 class="anchored" data-anchor-id="solution-19">Solution</h4>
+<p>We start with the case where <span class="math inline">p=1</span>. In this case, the hypercube is simly a line segement. Hence, the length of th hypercube is just the length of this line segment. So for it to contain 10% of the training data, and since our data is uniform on <span class="math inline">[0,1]</span>, <strong>the length of that line segment will just be 0.10</strong>.</p>
+<p>Now when <span class="math inline">p=2</span>, we are dealing with a 2-dimensional hypercube which is just a square. The axis of this square are defined by our 2 sets of uniformly distributed observations on <span class="math inline">[0,1]</span>. Hence, for the square (as a whole) to contain 10% of the training observations, each individual side of the square must have <span class="math display">x^2 = 0.10 \times 1 \times 1 = 0.10</span> Therefore, each side of the square will be of length <span class="math display">x = \sqrt{0.10} \approx 0.31</span> Therefore, for the whole square to contain 10% of the training observations, we need each side of the square to be about 0.31 in length (or about 31% of the interval-axis length).</p>
+<p>Now lastly, we take this idea and extend it to a <span class="math inline">p=100</span> dimensional hypecube. Hypercubes are defined the same way in <span class="math inline">p</span> dimensional space. In that, the area of it will just be <span class="math display">\text{Area} = \prod_{p=1}^{100} x^p</span> Hence, the length of each side will be <span class="math display">x = x^{1/100} = 0.10^{1/100} \approx 0.98</span> Therefore, each side of the hypercube must have a length of 0.98 (recall: the whole axis space is just of length 1). Therefore, for the hypercube to contain 10% of the training data, it would need to use 98% of the data from each dimension (feature). Therefore, it is not really a “nearest” neighbor method since it is essentially using all available data.</p>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
